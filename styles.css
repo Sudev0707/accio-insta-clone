@@ -134,12 +134,13 @@ body {
   background: #efefef;
   border-radius: 8px;
   padding: 0.5rem 1rem;
-  width: 600px;
+  width: 400px;
   display: flex;
   align-items: center;
   gap: 6px;
   color: #8e8e8e;
-  margin-left: 140px;
+  position: relative;
+  left: 10%;
 }
 
 .search-bar i {
