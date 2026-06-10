@@ -3,210 +3,287 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>InstaClone | Visual Feed</title>
+  <title>InstaClone | Left Sidebar Navigation</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="navbar">
-    <div class="nav-container">
-      <div class="logo">
-        <i class="fab fa-instagram" style="background: none;  color: #262626; margin-right: 4px;"></i> InstaClone
+  <div class="app-container">
+    <div class="left-sidebar">
+      <div class="sidebar-logo">
+        <i class="fab fa-instagram"></i>
+        <span>InstaClone</span>
       </div>
-      <div class="search-bar">
-        <i class="fas fa-search"></i>
-        <input type="text" placeholder="Search">
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fas fa-search"></i>
+          <span>Explore</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fas fa-compass"></i>
+          <span>Discover</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fas fa-film"></i>
+          <span>Reels</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fas fa-envelope"></i>
+          <span>Messages</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fas fa-heart"></i>
+          <span>Notifications</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fas fa-plus-square"></i>
+          <span>Create</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fas fa-user-circle"></i>
+          <span>Profile</span>
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="#" class="nav-item">
+          <i class="fas fa-cog"></i>
+          <span>Settings</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Logout</span>
+        </a>
       </div>
-      <div class="nav-icons">
-        <i class="far fa-compass"></i>
-        <i class="far fa-heart"></i>
-        <i class="far fa-user-circle"></i>
+    </div>
+
+    <div class="main-content">
+      <div class="top-navbar">
+        <div class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo-mobile">
+          <i class="fab fa-instagram"></i>
+          <span>InstaClone</span>
+        </div>
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="nav-icons">
+          <i class="far fa-compass"></i>
+          <i class="far fa-heart"></i>
+          <i class="far fa-user-circle"></i>
+        </div>
+      </div>
+
+      <div class="feed-container">
+        <div class="feed">
+          <div class="stories">
+            <div class="story">
+              <div class="story-ring"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="story"></div>
+              <span>your_story</span>
+            </div>
+            <div class="story">
+              <div class="story-ring"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="story"></div>
+              <span>alex_wave</span>
+            </div>
+            <div class="story">
+              <div class="story-ring"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="story"></div>
+              <span>mia_travels</span>
+            </div>
+            <div class="story">
+              <div class="story-ring"><img src="https://randomuser.me/api/portraits/men/91.jpg" alt="story"></div>
+              <span>james_art</span>
+            </div>
+            <div class="story">
+              <div class="story-ring"><img src="https://randomuser.me/api/portraits/women/22.jpg" alt="story"></div>
+              <span>lily_photo</span>
+            </div>
+            <div class="story">
+              <div class="story-ring"><img src="https://randomuser.me/api/portraits/men/45.jpg" alt="story"></div>
+              <span>nomad_ben</span>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="post-header">
+              <div class="post-user">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="profile">
+                <div class="post-user-info">
+                  travel_with_emi <span class="post-location">• Bali, Indonesia</span>
+                </div>
+              </div>
+              <div class="post-options">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+            </div>
+            <img class="post-image" src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=800" alt="beach view">
+            <div class="post-actions">
+              <i class="far fa-heart"></i>
+              <i class="far fa-comment"></i>
+              <i class="far fa-paper-plane"></i>
+              <i class="far fa-bookmark" style="margin-left: auto;"></i>
+            </div>
+            <div class="likes">2,847 likes</div>
+            <div class="caption">
+              <strong>travel_with_emi</strong> Golden hour magic ✨🌅 nothing compares to balinese sunsets.
+            </div>
+            <div class="comments">View all 124 comments</div>
+            <div class="timestamp">2 HOURS AGO</div>
+            <div class="add-comment">
+              <input type="text" placeholder="Add a comment...">
+              <button>Post</button>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="post-header">
+              <div class="post-user">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="profile">
+                <div class="post-user-info">
+                  urban_frames <span class="post-location">• NYC Streets</span>
+                </div>
+              </div>
+              <div class="post-options">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+            </div>
+            <img class="post-image" src="https://images.pexels.com/photos/1482476/pexels-photo-1482476.jpeg?auto=compress&cs=tinysrgb&w=800" alt="city architecture">
+            <div class="post-actions">
+              <i class="far fa-heart"></i>
+              <i class="far fa-comment"></i>
+              <i class="far fa-paper-plane"></i>
+              <i class="far fa-bookmark" style="margin-left: auto;"></i>
+            </div>
+            <div class="likes">1,203 likes</div>
+            <div class="caption">
+              <strong>urban_frames</strong> Concrete jungle where dreams are made of 🗽📸
+            </div>
+            <div class="comments">View all 89 comments</div>
+            <div class="timestamp">YESTERDAY</div>
+            <div class="add-comment">
+              <input type="text" placeholder="Add a comment...">
+              <button>Post</button>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="post-header">
+              <div class="post-user">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="profile">
+                <div class="post-user-info">
+                  coffee_and_code <span class="post-location">• Seattle, WA</span>
+                </div>
+              </div>
+              <div class="post-options">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+            </div>
+            <img class="post-image" src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&w=800" alt="city dusk">
+            <div class="post-actions">
+              <i class="far fa-heart"></i>
+              <i class="far fa-comment"></i>
+              <i class="far fa-paper-plane"></i>
+              <i class="far fa-bookmark" style="margin-left: auto;"></i>
+            </div>
+            <div class="likes">3,012 likes</div>
+            <div class="caption">
+              <strong>coffee_and_code</strong> City lights and late night coding sessions 🌃✨
+            </div>
+            <div class="comments">View all 205 comments</div>
+            <div class="timestamp">2 DAYS AGO</div>
+            <div class="add-comment">
+              <input type="text" placeholder="Add a comment...">
+              <button>Post</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-sidebar">
+          <div class="profile-card">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="current user">
+            <div class="profile-info">
+              <h4>emily_clone</h4>
+              <p>Emily Parker</p>
+            </div>
+          </div>
+          <div class="suggestions-header">
+            <span>Suggestions For You</span>
+            <span>See All</span>
+          </div>
+          <div class="suggestion-item">
+            <div class="suggestion-left">
+              <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="suggestion">
+              <div class="suggestion-info">
+                <strong>marcus_photo</strong>
+                <p>Followed by alex_wave + 3 more</p>
+              </div>
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div>
+          <div class="suggestion-item">
+            <div class="suggestion-left">
+              <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="suggestion">
+              <div class="suggestion-info">
+                <strong>artbyjulia</strong>
+                <p>New on Instagram</p>
+              </div>
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div>
+          <div class="suggestion-item">
+            <div class="suggestion-left">
+              <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="suggestion">
+              <div class="suggestion-info">
+                <strong>danny_adventures</strong>
+                <p>Followed by travel_with_emi</p>
+              </div>
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div>
+          <div class="suggestion-item">
+            <div class="suggestion-left">
+              <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="suggestion">
+              <div class="suggestion-info">
+                <strong>sophie_designs</strong>
+                <p>Followed by urban_frames</p>
+              </div>
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div>
+          <div class="footer-links">
+            About · Help · Press · API · Jobs · Privacy · Terms · Locations · Language · Meta Verified
+            <div style="margin-top: 12px;">© 2025 INSTACLONE</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="main-container">
-    <div class="feed">
-      <div class="stories">
-        <div class="story">
-          <div class="story-ring"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="story"></div>
-          <span>your_story</span>
-        </div>
-        <div class="story">
-          <div class="story-ring"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="story"></div>
-          <span>alex_wave</span>
-        </div>
-        <div class="story">
-          <div class="story-ring"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="story"></div>
-          <span>mia_travels</span>
-        </div>
-        <div class="story">
-          <div class="story-ring"><img src="https://randomuser.me/api/portraits/men/91.jpg" alt="story"></div>
-          <span>james_art</span>
-        </div>
-        <div class="story">
-          <div class="story-ring"><img src="https://randomuser.me/api/portraits/women/22.jpg" alt="story"></div>
-          <span>lily_photo</span>
-        </div>
-        <div class="story">
-          <div class="story-ring"><img src="https://randomuser.me/api/portraits/men/45.jpg" alt="story"></div>
-          <span>nomad_ben</span>
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="post-header">
-          <div class="post-user">
-            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="profile">
-            <div class="post-user-info">
-              travel_with_emi <span class="post-location">• Bali, Indonesia</span>
-            </div>
-          </div>
-          <div class="post-options">
-            <i class="fas fa-ellipsis-h"></i>
-          </div>
-        </div>
-        <img class="post-image" src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=800" alt="beach view">
-        <div class="post-actions">
-          <i class="far fa-heart"></i>
-          <i class="far fa-comment"></i>
-          <i class="far fa-paper-plane"></i>
-          <i class="far fa-bookmark" style="margin-left: auto;"></i>
-        </div>
-        <div class="likes">2,847 likes</div>
-        <div class="caption">
-          <strong>travel_with_emi</strong> Golden hour magic ✨🌅 nothing compares to balinese sunsets.
-        </div>
-        <div class="comments">View all 124 comments</div>
-        <div class="timestamp">2 HOURS AGO</div>
-        <div class="add-comment">
-          <input type="text" placeholder="Add a comment...">
-          <button>Post</button>
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="post-header">
-          <div class="post-user">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="profile">
-            <div class="post-user-info">
-              urban_frames <span class="post-location">• NYC Streets</span>
-            </div>
-          </div>
-          <div class="post-options">
-            <i class="fas fa-ellipsis-h"></i>
-          </div>
-        </div>
-        <img class="post-image" src="https://images.pexels.com/photos/1482476/pexels-photo-1482476.jpeg?auto=compress&cs=tinysrgb&w=800" alt="city architecture">
-        <div class="post-actions">
-          <i class="far fa-heart"></i>
-          <i class="far fa-comment"></i>
-          <i class="far fa-paper-plane"></i>
-          <i class="far fa-bookmark" style="margin-left: auto;"></i>
-        </div>
-        <div class="likes">1,203 likes</div>
-        <div class="caption">
-          <strong>urban_frames</strong> Concrete jungle where dreams are made of 🗽📸
-        </div>
-        <div class="comments">View all 89 comments</div>
-        <div class="timestamp">YESTERDAY</div>
-        <div class="add-comment">
-          <input type="text" placeholder="Add a comment...">
-          <button>Post</button>
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="post-header">
-          <div class="post-user">
-            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="profile">
-            <div class="post-user-info">
-              coffee_and_code <span class="post-location">• Seattle, WA</span>
-            </div>
-          </div>
-          <div class="post-options">
-            <i class="fas fa-ellipsis-h"></i>
-          </div>
-        </div>
-        <img class="post-image" src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&w=800" alt="city dusk">
-        <div class="post-actions">
-          <i class="far fa-heart"></i>
-          <i class="far fa-comment"></i>
-          <i class="far fa-paper-plane"></i>
-          <i class="far fa-bookmark" style="margin-left: auto;"></i>
-        </div>
-        <div class="likes">3,012 likes</div>
-        <div class="caption">
-          <strong>coffee_and_code</strong> City lights and late night coding sessions 🌃✨
-        </div>
-        <div class="comments">View all 205 comments</div>
-        <div class="timestamp">2 DAYS AGO</div>
-        <div class="add-comment">
-          <input type="text" placeholder="Add a comment...">
-          <button>Post</button>
-        </div>
-      </div>
+  <div class="mobile-sidebar">
+    <div class="mobile-sidebar-header">
+      <i class="fab fa-instagram"></i>
+      <span>InstaClone</span>
+      <i class="fas fa-times close-mobile-sidebar"></i>
     </div>
-
-    <div class="sidebar">
-      <div class="profile-card">
-        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="current user">
-        <div class="profile-info">
-          <h4>emily_clone</h4>
-          <p>Emily Parker</p>
-        </div>
-      </div>
-      <div class="suggestions-header">
-        <span>Suggestions For You</span>
-        <span>See All</span>
-      </div>
-      <div class="suggestion-item">
-        <div class="suggestion-left">
-          <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="suggestion">
-          <div class="suggestion-info">
-            <strong>marcus_photo</strong>
-            <p>Followed by alex_wave + 3 more</p>
-          </div>
-        </div>
-        <button class="follow-btn">Follow</button>
-      </div>
-      <div class="suggestion-item">
-        <div class="suggestion-left">
-          <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="suggestion">
-          <div class="suggestion-info">
-            <strong>artbyjulia</strong>
-            <p>New on Instagram</p>
-          </div>
-        </div>
-        <button class="follow-btn">Follow</button>
-      </div>
-      <div class="suggestion-item">
-        <div class="suggestion-left">
-          <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="suggestion">
-          <div class="suggestion-info">
-            <strong>danny_adventures</strong>
-            <p>Followed by travel_with_emi</p>
-          </div>
-        </div>
-        <button class="follow-btn">Follow</button>
-      </div>
-      <div class="suggestion-item">
-        <div class="suggestion-left">
-          <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="suggestion">
-          <div class="suggestion-info">
-            <strong>sophie_designs</strong>
-            <p>Followed by urban_frames</p>
-          </div>
-        </div>
-        <button class="follow-btn">Follow</button>
-      </div>
-      <div class="footer-links">
-        About · Help · Press · API · Jobs · Privacy · Terms · Locations · Language · Meta Verified
-        <div style="margin-top: 12px;">© 2025 INSTACLONE</div>
-      </div>
-    </div>
+    <nav class="mobile-sidebar-nav">
+      <a href="#" class="nav-item"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="#" class="nav-item"><i class="fas fa-search"></i><span>Explore</span></a>
+      <a href="#" class="nav-item"><i class="fas fa-compass"></i><span>Discover</span></a>
+      <a href="#" class="nav-item"><i class="fas fa-film"></i><span>Reels</span></a>
+      <a href="#" class="nav-item"><i class="fas fa-envelope"></i><span>Messages</span></a>
+      <a href="#" class="nav-item"><i class="fas fa-heart"></i><span>Notifications</span></a>
+      <a href="#" class="nav-item"><i class="fas fa-plus-square"></i><span>Create</span></a>
+      <a href="#" class="nav-item"><i class="fas fa-user-circle"></i><span>Profile</span></a>
+      <a href="#" class="nav-item"><i class="fas fa-cog"></i><span>Settings</span></a>
+      <a href="#" class="nav-item"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+    </nav>
   </div>
 
 
